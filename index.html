@@ -236,14 +236,6 @@ html, body {
   <script>
     const redirectTarget = 'https://senpaingo-web.github.io/nk201203/';
 
-    // Auto-redirect nếu đã "nhớ tôi"
-    (function(){
-      const remembered = localStorage.getItem('op_auth');
-      if(remembered === '1'){
-        location.replace(redirectTarget);
-      }
-    })();
-
     function togglePwd(){
       const i = document.getElementById('pwd');
       i.type = i.type === 'password' ? 'text' : 'password';
@@ -282,5 +274,6 @@ html, body {
   </script>
 </body>
 </html>
+
 
 
