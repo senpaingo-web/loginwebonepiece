@@ -236,13 +236,12 @@ html, body {
   <script>
     const redirectTarget = 'https://senpaingo-web.github.io/nk201203/';
 
-    // Auto-redirect nếu đã "nhớ tôi"
     (function(){
-      const remembered = localStorage.getItem('op_auth');
-      if(remembered === '1'){
-        location.replace(redirectTarget);
-      }
-    })();
+  const remembered = localStorage.getItem('op_auth');
+  if(remembered === '1'){
+    console.log("Bạn đã đăng nhập trước đó. Hãy nhấn nút để vào lại.");
+  }
+})();
 
     function togglePwd(){
       const i = document.getElementById('pwd');
@@ -282,3 +281,4 @@ html, body {
   </script>
 </body>
 </html>
+
